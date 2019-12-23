@@ -34,6 +34,9 @@ tr td:first-child:before
 #link{
   color:brown;
 }
+#li{
+  color:white;
+}
  </style>
 </head>
 
@@ -81,9 +84,9 @@ tr td:first-child:before
      <td scope="row"></td>
      <td>{{this.name}} {{this.last}}</td>
      <td>{{this.email}}</td>
-     <td><a href="/post/{{this.post_id}}">Click</a></td>
+     <td><a id="li" href="/post/{{this.post_id}}">Click</a></td>
      <td>{{this.created_at}}</td>
-     <td><a href="/comment/{{this.id}}">Click</a></td>
+     <td><a id="li" href="/comment/{{this.id}}">Click</a></td>
    </tr>
   {{/each}}
     
