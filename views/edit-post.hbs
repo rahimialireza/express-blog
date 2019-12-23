@@ -1,0 +1,87 @@
+<style></style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Edit Post</title>
+
+  {{>static}}
+  
+  <!-- Custom styles for this template -->
+  <link href="../css/clean-blog.min.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  {{> nav}}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('../img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Alireza Rahimi</h1>
+            <span class="subheading">Personal Blog that I share my idea</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+      <h2>Edit Post <span class="badge badge-secondary"></span></h2>
+      <hr>
+      <br>
+  </div>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-md-10 mx-auto">
+    <form action="/edit-post" method="POST"  enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Title</label>
+    <input type="text" name="title" value="{{post.title}}" class="form-control" id="exampleFormControlInput1" placeholder="title">
+  </div>   
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Subtitle</label>
+    <input type="text" name="subtitle" value="{{post.subtitle}}" class="form-control" id="exampleFormControlInput1" placeholder="title">
+  </div>     
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Content</label>
+    <textarea  name="content" class="form-control" id="exampleFormControlTextarea1" rows="8">{{post.content}}</textarea>
+  </div>
+    <div class="field-wrap"> 
+         <label for="image">Image</label>
+         <input type="file" name="image" id="image"  /></input><small><a target="_blank" href="{{post.image}} ">{{post.image}}</a></small>
+    </div>
+    <br>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+    </div>
+    </div>
+    </div>
+<!-- Footer -->
+{{>footer}}
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+</body>
+
+</html>

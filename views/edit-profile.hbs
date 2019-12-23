@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Edit Profile</title>
+
+  {{>static}}
+  
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  {{> nav}}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Alireza Rahimi</h1>
+            <span class="subheading">Personal Blog that I share my idea</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<body>
+    <div>
+     <div id="form">
+      <div class="container">
+        <div class=" col-md-6 ">
+          <div id="userform">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li class="active"><a href="#signup"  role="tab" data-toggle="tab">If You Want Update your Information, Please Click</a></li>
+            </ul>
+            <br>
+            <div class="tab-content">
+              <div class="tab-pane fade active in" id="signup">
+                <h2 class="text-uppercase text-center"> Edit Profile</h2>
+                <form id="signup" action="/controllers/update-controller" method="POST">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label> Name<span class="req">*</span> </label>
+                        <input type="text" class="form-control" id="first_name" required data-validation-required-message="Please enter your name." autocomplete="off" name="name">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label> last<span class="req">*</span> </label>
+                        <input type="text" class="form-control" id="first_name" required data-validation-required-message="Please enter your name." autocomplete="off" name="last">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label> Your Email<span class="req">*</span> </label>
+                    <input type="email" class="form-control" id="email" value="{{username}}" required data-validation-required-message="Please enter your email address." autocomplete="off" name="email" readonly>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label> Major</label>
+                        <input type="text" class="form-control" id="first_name" required data-validation-required-message="Please enter your name." autocomplete="off" name="major">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <label> Number</label>
+                        <input type="text" class="form-control" id="first_name" required data-validation-required-message="Please enter your name." autocomplete="off" name="number">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label> Password<span class="req">*</span> </label>
+                    <input type="password" class="form-control" id="password" required data-validation-required-message="Please enter your password" autocomplete="off" name="password">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="mrgn-30-top">
+                    <button type="submit" class="btn btn-larger btn-block">
+                    Update
+                    </button>
+                    <br>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Footer -->
+{{>footer}}
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+</body>
+
+</html>

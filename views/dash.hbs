@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title> Teacher Dashboard</title>
+
+  {{>static}}
+  
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  {{> nav}}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('../img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Alireza Rahimi</h1>
+            <span class="subheading">Personal Blog that I share my idea</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+      <h2>Admin Dashboard <span class="badge badge-secondary"></span></h2>
+      <hr>
+      <br>
+      <div class="col-sm-6" style="margin-top:0px"></div>
+      <a href="/list"><button type="button" class="btn btn-secondary">Post List</button></a>
+      <a href="/write"><button type="button" class="btn btn-secondary">Write Post</button></a>
+      <a href="/student"><button type="button" class="btn btn-secondary">Student List</button></a>
+      <a href="/message-list"><button type="button" class="btn btn-secondary">Message List</button></a>
+      <a href="/comment-list"><button type="button" class="btn btn-secondary">Comment List</button></a>
+      <div class="col-sm-4" style="margin-top:30px"></div>
+  </div>
+
+<!-- Footer -->
+{{>footer}}
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+</body>
+
+</html>
